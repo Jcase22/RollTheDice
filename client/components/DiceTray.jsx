@@ -23,7 +23,7 @@ const DiceTray = (props) => {
   }
 
   return (
-    <div>
+    <div className='dice-tray'>
       {allDice}
     </div>
   )

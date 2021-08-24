@@ -5,8 +5,8 @@ const Dice = (props) => {
 
 
   return (
-    <div>
-      {props.face}
+    <div className='dice'>
+      {props.face || 1}
     </div>
   )
 }

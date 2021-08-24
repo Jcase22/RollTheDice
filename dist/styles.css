@@ -1,0 +1,33 @@
+.dice-tray {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 35px;
+  justify-content: space-evenly;
+}
+
+.dice {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.title-card {
+  display: flex;
+  justify-content: center;
+}
+
+.roll-dice-btn {
+  position: fixed;
+  right: 48%;
+}
+
+.contact-info {
+  bottom: 0;
+  position: fixed;
+}
+
+
