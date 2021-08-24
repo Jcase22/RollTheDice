@@ -1,5 +1,5 @@
 body {
-  background-image: url(../client/assets/wooden-background.jpg);
+  background: #a7cece url(wooden-background.jpg);
   background-size: cover;
 }
 
@@ -13,16 +13,19 @@ body {
 .dice {
   padding-left: 40px;
   padding-right: 40px;
+  color: white;
 }
 
 .input-container {
   display: flex;
   justify-content: space-evenly;
+  color: white;
 }
 
 .title-card {
   display: flex;
   justify-content: center;
+  color: white;
 }
 
 .roll-dice-btn {
@@ -37,6 +40,10 @@ body {
 
 .feedback-form {
   right: 0;
+}
+
+.text {
+  color: white;
 }
 
 

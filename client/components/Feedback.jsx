@@ -38,7 +38,7 @@ const Feedback = (props) => {
 
   return (
     <form onSubmit={submitHandler} className='feedback-form'>
-      <div>Send Me Some Feedback!</div>
+      <div className='text'>Send Me Some Feedback!</div>
       <input type='text' onChange={changeHandler} value={text}></input>
       <button type='submit'>Submit</button>
     </form>

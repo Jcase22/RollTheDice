@@ -12,7 +12,7 @@ const DiceTray = (props) => {
 
   useEffect(() => {
     setAllDice(diceMaker(props.numDice))
-  }, [props.trigger])
+  }, [props.randomNum])
 
   const diceMaker = (number) => {
     var diceTray = []

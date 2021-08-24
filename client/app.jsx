@@ -12,16 +12,14 @@ const App = (props) => {
   const [numDice, setNumDice] = useState(1);
   const [numSides, setNumSides] = useState(6);
   const [randomNum, setRandomNum] = useState([]);
-  const [trigger, setTrigger] = useState(0);
+  const [total, setTotal] = useState(0);
 
-  const generateNum = () => {
-    var numArray = [];
-    for (var i = 0; i < Number(numDice); i++) {
-      numArray.push(getRandomInt(numSides))
-    }
-    setRandomNum(numArray)
-    setTrigger(trigger + 1)
-  }
+  useEffect(() => {
+    var summedDice = randomNum.reduce((currentTotal, num) => {
+      return num + currentTotal
+    }, 0)
+    setTotal(summedDice)
+  }, [randomNum])
 
   return (
     <div>
@@ -40,12 +38,13 @@ const App = (props) => {
             numArray.push(getRandomInt(numSides))
           }
           setRandomNum(numArray)
-          setTrigger(trigger + 1)
           if(start > end) clearInterval(timer)
         }
         var timer = setInterval(generateNum, 250)
       }} >Roll</button>
-      <DiceTray numDice={numDice} numSides={numSides} randomNum={randomNum} trigger={trigger} />
+      <DiceTray numDice={numDice} numSides={numSides} randomNum={randomNum} />
+      <h1 className='title-card'>Total</h1>
+      <h2 className='title-card'>{total}</h2>
       <Feedback />
     </div>
   )
