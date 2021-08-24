@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import NumDiceInput from './components/NumDiceInput.jsx';
 import NumSidesInput from './components/NumSidesInput.jsx';
 import DiceTray from './components/DiceTray.jsx';
+import Feedback from './components/Feedback.jsx'
 import Button from 'react-bootstrap/Button'
 
 
