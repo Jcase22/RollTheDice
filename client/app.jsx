@@ -30,7 +30,7 @@ const App = (props) => {
       </div>
       <button className='roll-dice-btn' onClick={() => {
         var start = Date.now();
-        var end = start + 4000;
+        var end = start + 3500;
         const generateNum = () => {
           start = Date.now()
           var numArray = [];
@@ -40,7 +40,7 @@ const App = (props) => {
           setRandomNum(numArray)
           if(start > end) clearInterval(timer)
         }
-        var timer = setInterval(generateNum, 250)
+        var timer = setInterval(generateNum, 100)
       }} >Roll</button>
       <DiceTray numDice={numDice} numSides={numSides} randomNum={randomNum} />
       <h1 className='title-card'>Total</h1>
