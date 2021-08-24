@@ -1,10 +1,13 @@
 const path = require('path');
+
+
+
 module.exports = {
   entry: './client/index.js',
   mode: "development",
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'), //this is the folder you want to save your bundle in
+    path: path.resolve(__dirname, 'dist'),
   },
 
  module: {
