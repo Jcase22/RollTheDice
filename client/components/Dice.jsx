@@ -1,12 +1,12 @@
 import React from 'react';
+import {useEffect, useState} from 'react';
 
 const Dice = (props) => {
 
-  
 
   return (
     <div>
-      This is Dice
+      {props.face}
     </div>
   )
 }
