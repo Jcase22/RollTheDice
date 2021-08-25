@@ -1,6 +1,6 @@
 module.exports = {
-  user: 'your username',
+  user: 'justincase',
   host: '127.0.0.1',
-  database: 'your DB',
+  database: 'feedback',
   port: 5432,
 }
