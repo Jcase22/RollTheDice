@@ -8,7 +8,7 @@ import StatsTable from './components/StatsTable.jsx'
 import Button from 'react-bootstrap/Button'
 
 
-const App = (props) => {
+const App = () => {
 
   const [title, setTitle] = useState('Have The Cheek')
   const [numDice, setNumDice] = useState(1);
