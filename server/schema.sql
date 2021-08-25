@@ -2,7 +2,7 @@ DROP TABLE IF EXISTS feedback;
 
 CREATE TABLE feedback (
   id SERIAL,
-  message VARCHAR(255),
+  message VARCHAR(255) NOT NULL,
   PRIMARY KEY (id)
 );
 

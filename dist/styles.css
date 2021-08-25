@@ -33,6 +33,18 @@ body {
   right: 48%;
 }
 
+table {
+  position: fixed;
+  right: 44%;
+  top: 26%;
+  color: white;
+  text-align: center;
+}
+
+th {
+  padding-right: 10px;
+}
+
 .contact-info, .feedback-form{
   bottom: 0;
   position: fixed;
