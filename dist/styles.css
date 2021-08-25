@@ -33,16 +33,14 @@ body {
   right: 48%;
 }
 
-table {
-  position: fixed;
-  right: 44%;
-  top: 26%;
-  color: white;
-  text-align: center;
+.stats-header {
+  padding-right: 15px;
 }
 
-th {
-  padding-right: 10px;
+.stats-container {
+  color:white;
+  display:flex;
+  justify-content: center;
 }
 
 .contact-info, .feedback-form{

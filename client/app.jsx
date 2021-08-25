@@ -10,6 +10,7 @@ import Button from 'react-bootstrap/Button'
 
 const App = (props) => {
 
+  const [title, setTitle] = useState('Have The Cheek')
   const [numDice, setNumDice] = useState(1);
   const [numSides, setNumSides] = useState(6);
   const [randomNum, setRandomNum] = useState([]);
@@ -40,12 +41,23 @@ const App = (props) => {
     var timer = setInterval(generateNum, 100)
   }
 
+  const onMouseOver = (e) => {
+    setTitle('Roll The Dice')
+  }
+
+  const onMouseOut = (e) => {
+    setTitle('Have The Cheek')
+  }
+
   return (
     <div>
-      <h1 className='title-card'> Roll The Dice </h1>
+      <h1 className='title-card'
+      onMouseEnter={onMouseOver}
+      onMouseLeave={onMouseOut}
+      >{title}</h1>
       <div className='input-container'>
-        <NumDiceInput setNumDice={setNumDice} />
-        <NumSidesInput setNumSides={setNumSides} />
+        <NumDiceInput setNumDice={setNumDice} numDice={numDice} />
+        <NumSidesInput setNumSides={setNumSides} numSides={numSides} />
       </div>
       <button className='roll-dice-btn' onClick={diceRoller} >Roll</button>
       <DiceTray numDice={numDice} numSides={numSides} randomNum={randomNum} />
