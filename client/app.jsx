@@ -17,6 +17,7 @@ const App = () => {
   const [total, setTotal] = useState(0);
   const [average, setAverage] = useState(0);
 
+  //hello
   useEffect(() => {
     var summedDice = randomNum.reduce((currentTotal, num) => {
       return num + currentTotal
